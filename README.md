@@ -1,4 +1,4 @@
-# gogs-k3s
+# wordpress-k3s
 
 A kubectl YAML to deploy Wordpress on Kubernetes
 
