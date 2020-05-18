@@ -1,0 +1,21 @@
+namespace: wordpress
+secretGenerator:
+- name: mysql-host
+  literals:
+  - db-host=wordpress-mysql
+- name: mysql-db
+  literals:
+  - database=wordpress
+- name: mysql-usr
+  literals:
+  - user=wordpress
+- name: mysql-pass
+  literals:
+  - password=SgUV52ctS6HorysXprfg
+resources:
+- mysql-deployment.yaml
+- wordpress-deployment.yaml
+- wordpress-ingressroute.yaml
+- wordpress-headers.yaml
+- wordpress-ipwhitelist.yaml
+- wordpress-namespace.yaml

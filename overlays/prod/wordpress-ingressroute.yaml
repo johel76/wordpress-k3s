@@ -1,0 +1,23 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ingressroutetls
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - match: Host(`www.n0secure.org`)
+    kind: Rule
+    services:
+    - name: prod-wordpress
+      port: 80
+    middlewares:
+      - name: prod-wp-headers
+
+  #- match: Host(`blog.n0secure.org`) && (Path(`/wp-admin`)|| Path(`/wp-login.php`))
+  #  kind: Rule
+  #  services:
+  #  - name: wordpress
+  #    port: 80
+  #  middlewares:
+  #    - name: wp-ipwhitelist

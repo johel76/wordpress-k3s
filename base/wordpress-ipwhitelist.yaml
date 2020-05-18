@@ -1,0 +1,8 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: wp-ipwhitelist
+spec:
+  ipWhiteList:
+    sourceRange:
+      - X.X.X.X/32
