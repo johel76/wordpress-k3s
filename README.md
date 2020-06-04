@@ -20,3 +20,7 @@ kubectl apply -k overlays/<env>
 ```bash
 kubectl delete namespace <env>-wordpress
 ```
+
+## Credits
+
+https://www.grottedubarbu.fr/wordpress-kubernetes-traefik/

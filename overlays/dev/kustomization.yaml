@@ -14,7 +14,7 @@ secretGenerator:
     behavior: replace
   - name: mysql-pass
     literals:
-    - password=SgUV52ctS6HorysXprfg
+    - password=RJF4JzAjfR6uk7LBQb
     behavior: replace
 bases:
 - ../../base
