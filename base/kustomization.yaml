@@ -17,5 +17,4 @@ resources:
 - wordpress-deployment.yaml
 - wordpress-ingressroute.yaml
 - wordpress-headers.yaml
-- wordpress-ipwhitelist.yaml
 - wordpress-namespace.yaml
