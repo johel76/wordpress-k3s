@@ -23,3 +23,11 @@ patchesStrategicMerge:
 - mysql-deployment.yaml
 - wordpress-deployment.yaml
 - wordpress-ingressroute.yaml
+- wordpress-headers.yaml
+images:
+- name: mysql
+  newName: mysql
+  newTag: 8.0.27
+- name: wordpress
+  newName: wordpress
+  newTag: 5.8.2-apache
