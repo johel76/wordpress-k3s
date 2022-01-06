@@ -11,7 +11,7 @@ You can tune the prod or dev Kustomize Overlay with :
 ## Installation 
 
 ```bash
-git clone https://github.com/kyzdev/wordpress-k3s
+git clone https://github.com/johel76/wordpress-k3s.git
 cd wordpress-k3s
 kubectl apply -k overlays/<env>
 ```
